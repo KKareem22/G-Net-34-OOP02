@@ -34,6 +34,27 @@ namespace G_Net_34_OOP02
             //3- Allows future modification.
             #endregion
             #endregion
+            #region Q02
+            /*
+             *  What is the difference between a field and a property in C#? Can a property contain logic? 
+             *  1)Filed : A field is a variable that is declared directly in a class or struct and is used to store data. Fields can be public, private, protected, or internal, and they can be of any data type. They are accessed directly by their name.
+             *  Direct data storage .
+             *  No validation .
+             *  Breaks encapsulation
+             *  2)Property : A property is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field. Properties can contain logic in their get and set accessors, allowing for validation, transformation, or other operations when getting or setting the value. They are accessed like fields but are actually methods under the hood.
+             *  Controlled access.
+             *  Can validate .
+             *  Enforces encapsulation
+             */
+            //Give an example of a read-only property that returns a calculated value.?
+            //this Example in class Rectangle
+            //Rectangle r01= new Rectangle();
+            //r01.Length = 5;
+            //r01.Width = 3;
+            //Console.WriteLine($"The area = {r01.Length} * {r01.Width}= {r01.Area}");
+            ////r01.Area = 100; Invaild
+            #endregion
+
 
 
         }
