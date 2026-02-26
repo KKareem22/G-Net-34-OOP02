@@ -98,7 +98,22 @@ namespace G_Net_34_OOP02
             //Console.WriteLine($"Indexer  Invaild = {l01["123-111-456"]}");
             #endregion
             #endregion
-
+            #region Q04
+            #region a
+            //What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
+            //The static keyword means that TotalOrders belongs to the class itself rather than any specific object (instance). All objects share the same single copy of this variable.
+            //Different :
+            //TotalOrders is shared across all orders (global to the class), while Item is an instance field, meaning every individual order has its own unique item name
+            #endregion
+            #region b
+            //Can a static method inside `Order` access the `Item` field directly? Why or why not?
+            /*No, it cannot.
+             * Reason: A static method exists at the class level and does not have access to this (a specific object). 
+             * Since Item depends on a specific instance of the class, 
+             * the static method wouldn't know which order's Item to access
+             */
+            #endregion
+            #endregion
 
         }
     }
