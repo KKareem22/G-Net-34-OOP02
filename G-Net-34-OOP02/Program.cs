@@ -1,4 +1,5 @@
 ﻿using G_Net_34_OOP02.Classes;
+using System;
 
 namespace G_Net_34_OOP02
 {
@@ -54,7 +55,49 @@ namespace G_Net_34_OOP02
             //Console.WriteLine($"The area = {r01.Length} * {r01.Width}= {r01.Area}");
             ////r01.Area = 100; Invaild
             #endregion
+            #region Q03
+            #region a
+            //What is `this[int index]` called? Explain its purpose.?
+            //this[int index] is called an indexer in C#. An indexer allows an object to be indexed like an array, providing a way to access elements of a collection or class using array-like syntax. The purpose of an indexer is to enable the use of square brackets [] to access elements within a class or struct, making it more intuitive and convenient for users of the class to work with collections of data.
+            #endregion
+            #region b
+            //What happens if someone writes `register[10] = "Ali";` ? How would you make the indexer safer?
+            //Throw an exception because the index is out of range. To make the indexer safer, you can add validation to check if the index is within the valid range before allowing access or modification. For example:
+            //Example of safer indexer : Look to class StudentRegister
+            //StudentRegister S01=new StudentRegister();
+            //S01[0] = "Ali";
+            //S01[1] = "Sara";
+            //S01[2] = "Kareem";
+            //S01[3] = "Rawan";
+            //S01[4] = "Eman";
+            //S01[5] = "Faten";//This will not be added because the index is out of range.
+            //Console.WriteLine(S01[0]);
+            //Console.WriteLine(S01[1]);
+            //Console.WriteLine(S01[2]);
+            //Console.WriteLine(S01[3]);
+            //Console.WriteLine(S01[4]);
+            //Console.WriteLine(S01[5]);//This will return "Not in range" because the index is out of range.
 
+            #endregion
+            #region c
+            ////Can a class have more than one indexer? If yes, give an example of when that would be useful?
+            ////Yes , a class can have more than one indexer .This Overloading allows you to provide different ways to access the data (parameters) .
+            ////Example : go to Class Library
+            //Libaray l01 = new Libaray("Alex Libaray");
+            //l01.AddBook(new Book("123-957-456", "C# Basic"));
+            //l01.AddBook(new Book("123-959-456", "C# Advandes"));
+            //l01.AddBook(new Book("123-951-451", "C# OOP"));
+            //l01.AddBook(new Book("153-900-156", "Network2"));
+            //Console.WriteLine("___________With Indexer__________");
+            //Console.WriteLine($"Indexer [0] = {l01[0]}");
+            //Console.WriteLine($"Indexer [3] = {l01[3]}");
+            //Console.WriteLine($"Indexer [7] Invaild = {l01[7]}");
+            //Console.WriteLine("___________With ISBN__________");
+            //Console.WriteLine($"Indexer  = {l01["153-900-156"]}");
+            //Console.WriteLine($"Indexer  = {l01["123-959-456"]}");
+            //Console.WriteLine($"Indexer  Invaild = {l01["123-111-456"]}");
+            #endregion
+            #endregion
 
 
         }
