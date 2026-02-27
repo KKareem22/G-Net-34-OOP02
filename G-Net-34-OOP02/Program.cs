@@ -1,4 +1,5 @@
 ﻿using G_Net_34_OOP02.Classes;
+using G_Net_34_OOP02.Part2;
 using System;
 
 namespace G_Net_34_OOP02
@@ -113,6 +114,78 @@ namespace G_Net_34_OOP02
              * the static method wouldn't know which order's Item to access
              */
             #endregion
+            #endregion
+            #region Part02
+            //Cinema cinema = new Cinema();
+            //bool IsParsed= false;
+            //Console.WriteLine("_______Ticket Booking_______");
+            //for(int i=1;i<=3;i++)
+            //{
+            //    Console.WriteLine($"Enter a data for Ticket {i} :");
+            //    Console.Write("Moive Name : ");
+            //    string name= Console.ReadLine();
+            //    TicketType tickettype;
+            //    do
+            //    {
+            //        Console.Write("Ticket Type (0=Standard) (1=VIP) (2=IMAX) : ");
+            //        IsParsed=Enum.TryParse(Console.ReadLine(),true,out tickettype);
+            //    }
+            //    while (!IsParsed ||!Enum.IsDefined(tickettype));
+            //    char Row;
+            //    do
+            //    {
+            //        Console.Write("Seat Row (A-Z) :");
+            //        IsParsed=char.TryParse(Console.ReadLine().ToUpper(),out Row);
+            //    }
+            //    while (!IsParsed || char.IsDigit(Row));
+            //    int Number;
+            //    do
+            //    {
+            //        Console.Write("Seat Number :");
+            //        IsParsed=int.TryParse(Console.ReadLine(),out Number);
+
+            //    }
+            //    while (!IsParsed ||Number<0);
+            //    decimal price;
+            //    do
+            //    {
+            //        Console.Write("Price :");
+            //        IsParsed=decimal.TryParse(Console.ReadLine(),out price);
+            //    }while(!IsParsed);//No need to check for negative price because it will be handled in the property setter.
+            //    ClsTicket ticket = new ClsTicket(name, price, tickettype, new Seat(Row, Number));
+            //    cinema.AddTicket(ticket);
+            //    Console.WriteLine();
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("_______All Tickets_______");
+            //for(int i=0;i<3;i++)
+            //{
+            //    var t = cinema[i];
+            //    if(t!=null)
+            //    {
+            //        Console.WriteLine($"Ticket #{t.TickectID} | {t.MovieName} | {t.Type} | {t.Seat} | Price:{t.Price} EGP | After Tax :{t.PriceAfterTax} ");
+            //    }
+            //}
+            //Console.WriteLine("Search By Moive_______");
+            //Console.Write("Enter a Moive Name : ");
+            //string searchName = Console.ReadLine();
+            //var FoundTicket=cinema.GetMovieByName(searchName);
+            //if(FoundTicket!=null)
+            //{
+            //    Console.WriteLine($"Found :Ticket #{FoundTicket.TickectID} | {FoundTicket.MovieName} | {FoundTicket.Type} | {FoundTicket.Seat} Price:{FoundTicket.Price} EGP");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not Found");
+            //}
+            //Console.WriteLine("_______Statistics_______");
+            //Console.WriteLine($"Total Tickets Sold:{ClsTicket.GetTotalTicketsSold}");
+            //Console.WriteLine($"\nBooking Reference 1: {BookingHelper.GenerateBookingReference()}");
+            //Console.WriteLine($"Booking Reference 2: {BookingHelper.GenerateBookingReference()}");
+            //Console.WriteLine();
+            //double groupPrice = BookingHelper.CalcGroupDiscount(5, 80);
+            //Console.WriteLine($"Group Price for 5 tickets at 80 EGP each with discount: {groupPrice}  EGP (10% off applied)");
+            //Console.ReadLine();
             #endregion
 
         }
